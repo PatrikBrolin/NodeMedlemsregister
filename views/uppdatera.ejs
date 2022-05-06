@@ -18,10 +18,10 @@
     <form action="/uppdatera/<%= id%>" method="post">
       <h2>Uppdatera medlem</h2>
 
-      <input type="text" name="name" id="name" placeholder="Namn" value="<%= name%>">
-      <input type="email" name="email" id="email" placeholder="Email" value="<%= email%>">
-      <input type="number" name="phonenumber" id="phonenumber" placeholder="Telefonnummer" value="<%= phonenumber%>">
-      <input type="text" name="strength" id="strength" placeholder="Styrka" value="<%= strength%>">
+      <input type="text" name="name" id="name" placeholder="Namn" value="<%= name%>" required>
+      <input type="email" name="email" id="email" placeholder="Email" value="<%= email%>" required>
+      <input type="number" name="phonenumber" id="phonenumber" placeholder="Telefonnummer" value="<%= phonenumber%>" required>
+      <input type="text" name="strength" id="strength" placeholder="Styrka" value="<%= strength%>" required>
       <button>Uppdatera!</button>
     </form>
   </div>
