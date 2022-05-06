@@ -1,0 +1,34 @@
+footer{
+  margin-top:auto; 
+  min-height:300px; background:rgb(8, 20, 32);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20%;
+  grid-column: 1;
+  color: white;
+}
+
+.contact h3 {
+  margin-bottom: 20px;
+}
+.contact p{
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.copyright{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 100px;
+
+  grid-column: 2;
+  color: white;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/medlem.css">
+  <title>Document</title>
+</head>
+<body>
+  <%- include('./components/header')%>
+
+  <div class="hero">
+  </div>
+  <div class="container">
+      <div class="profile">
+        <div class="profile-header">
+          <i class="bi bi-person-circle"></i>
+          <h2><%= name%></h2>
+        </div>
+        <div class="profile-main">
+          <div class="profile-info">
+            <p><b>Email:</b><%= email%></p>
+            <p><b>Telefonnummber:</b> <%= phonenumber%></p>
+            <p><b>Styrka:</b> <%= strength%></p>
+            <p><b>Registrerad:</b> <%= registered%></p>
+          </div>
+          <div class="edit-btn">
+            <a href="/uppdatera/<%= id%>">Uppdatera medlem</a>
+            <a href="/medlem/<%= id%>/radera">Radera medlem</a>
+
+          </div>
+
+        </div>
+      </div>
+  </div>
+
+  <%- include('./components/footer')%>
+</body>
+</html>

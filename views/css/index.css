@@ -1,0 +1,103 @@
+@import 'header.css';
+@import 'footer.css';
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+width: 100%;
+display: flex;
+flex-direction: column;
+overflow-y: scroll;
+}
+
+.hero{
+  position: absolute;
+  align-items: center;
+  display: flex;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 600px;
+  background-color: black;
+  color: white;
+}
+
+#myVideo{
+  z-index: 0;
+  position: absolute;
+  top: 0px;
+  left: 0x;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 40%;
+}
+
+.hero .hero-info{
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+.hero .hero-info h2{
+  font-size: 75px;
+}
+.hero .hero-info p{
+  font-size: 35px;
+}
+
+.hero .hero-info a{
+  padding: 15px 25px;
+  border-radius: 25px;
+  border: 0px;
+  background-color: rgb(193, 128, 7);
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+.container{
+  margin: auto;
+  width: 100%;
+  margin-top: 520px;
+  position: relative;
+  display: flex;
+  height: 800px;
+} 
+
+.container main{
+  width: 70%;
+  height: 100%;
+  padding: 0 20% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container main h2 {
+  font-size: 35px;
+  margin: 20px;
+}
+
+.container main p{
+  font-size: 20px;
+}
+
+.container aside{
+  width: 30%;
+  height: 100%;
+
+}

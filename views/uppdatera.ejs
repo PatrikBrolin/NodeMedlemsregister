@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/uppdatera.css">
+  <title>Document</title>
+</head>
+<body>
+  <%- include('./components/header')%>
+  
+  <div class="hero">
+    
+  </div>
+
+  <div class="container">
+    <form action="/uppdatera/<%= id%>" method="post">
+      <h2>Uppdatera medlem</h2>
+
+      <input type="text" name="name" id="name" placeholder="Namn" value="<%= name%>">
+      <input type="email" name="email" id="email" placeholder="Email" value="<%= email%>">
+      <input type="number" name="phonenumber" id="phonenumber" placeholder="Telefonnummer" value="<%= phonenumber%>">
+      <input type="text" name="strength" id="strength" placeholder="Styrka" value="<%= strength%>">
+      <button>Uppdatera!</button>
+    </form>
+  </div>
+  <%- include('./components/footer')%>
+</body>
+</html>
