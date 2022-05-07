@@ -25,7 +25,7 @@ app.get('/medlemmar', async (req, res) => {
 
 app.get('/medlemmar/acending', async (req, res) =>{
   const members = await member.find({}).sort({name: 1}).toArray()
-  console.log(members)
+
   res.render('medlemmar', {
     members
   });
