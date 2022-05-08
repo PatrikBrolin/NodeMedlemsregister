@@ -15,9 +15,10 @@ body{
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-
+  background-image: url('/media/timothy-tan-PAe2UhGo-S4-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+
   }
 
 
@@ -28,12 +29,9 @@ body{
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 500px;
+    height: 300px;
     color: white;
-    background-image: url('/media/donnycocacola--3pxa1O1zoI-unsplash.jpg');
-    background-size: cover;
-    background-position-y:-200px ;
-    background-repeat: no-repeat;
+
   }
 
   .nav{
@@ -41,7 +39,7 @@ body{
     position: absolute;
     width: 100%;
     height: 50px;
-    margin-top: 520px;
+    margin-top: 300px;
     display: flex;
     justify-content: center;
     border: none;
@@ -68,51 +66,99 @@ body{
   .container{
     margin: auto;
     width: 100%;
-    margin-top: 420px;
+    margin-top: 250px;
     position: relative;
     height: auto;
     min-height: 500px;
     display: grid;
     padding: 5%;
     grid-template-columns: repeat(4, 1fr);
-
+    color: white
   } 
 
-  .container a {
- 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: black;
-    text-decoration: none;
-    height: 300px;
-    border: 2px solid rgba(0, 0, 0, 0.1) ;
-    padding: 0px;
-
-  }
-  .container a .image{
-    width: 100%;
-    height: 70%;
+  .containers{
     margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
+    width: 300px;
+    display: grid;
+    grid-template-columns: 50px 200px 50px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
   }
-  .container a .image .bi{
-    font-size: 150px;
-    display: flex;
+
+  .containers .left{
+    position: relative;
+    grid-column: 1;
+    border-radius: 12px 0px 0px 12px;
+    border-left: 4px solid black;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+  }
+
+  .containers .left::before{
+    position: absolute;
+    content: "";
+    right: 0px;
+    height: 98%;
+    width: 94%;
+    border-radius: 8px 0px 0px 8px;
+    border-left: 3px solid black;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    transform: translateY(1%);
+  }
+  .containers .right{
+    position: relative;
+    grid-column: 3;
+    border-radius: 0px 12px 12px 0px;
+    border-right: 4px solid black;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+  }
+
+  .containers .right::before{
+    position: absolute;
+    content: "";
+    height: 98%;
+    width: 94%;
+    border-radius: 0px 8px 8px 0px;
+    border-right: 3px solid black;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    transform: translateY(1%);
+  }
+
+  .containers .middle{
+    text-align: center;
+    display: grid;
     justify-content: center;
-    align-items: center;
-    margin: auto;
-    color: black;
-    background-color: rgba(0, 0, 0, 0.2);
-    width: 100%;
+    grid-template-rows: 30px 1fr 30px;
+  }
+
+  .containers .middle h3{
+    font-size: 33px;
+    grid-row: 1;
+  }
+  .containers .middle h4{
+    font-size: 33px;
+    grid-row: 3;
+  }
+
+  .member-info{
+    grid-row: 2;
     height: 100%;
   }
 
-  .container a h3{
+  .member-info .image{
+    font-size: 150px;
+    margin-top: 50px;
+    color: white;
+  }
+
+  .member-info p a{
+    font-size: 35px;
+    text-decoration: none;
+    color: white;
     text-decoration: underline;
   }
+  

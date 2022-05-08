@@ -24,12 +24,21 @@
   </div>
   <div class="container">
     <% members.forEach((member) => { %>
-    <a href="/medlem/<%= member._id%>">
-      <div class="image"><i class="bi bi-person-circle"></i></div>
-      <h3><%=member.name %></h3>
-    </a>
+    <div class="containers">
+      <div class="left"></div>
+      <div class="middle">
+        <h3>Nackademin</h3>
+        <div class="member-info">
+          <div class="image"><i class="bi bi-person-circle"></i></div>
+          <p><a href="/medlem/<%= member._id%>"><%=member.name %></a></p>
+        </div>
+        <h4>Fotbollsklubb</h4>
+      </div>
+      <div class="right"></div>
+    </div>
     <% }) %>
   </div>
+    
   <%- include('./components/footer')%>
 
 </body>
